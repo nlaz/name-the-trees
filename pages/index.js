@@ -1,8 +1,12 @@
 import React from "react";
+import Map from "../components/Map";
 
 const Home = () => (
-  <div className="container">
-    <h1>🌳</h1>
+  <div>
+    <div className="container">
+      <h1>🌳</h1>
+    </div>
+    <Map/>
   </div>
 );
 

@@ -48,6 +48,7 @@ class Meta extends Component {
         <meta name="twitter:image" content={twitterImage} />
         <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css">
         <link rel="stylesheet" href="/styles/index.css" />
+        <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css" />
       </Head>
     );
   }
