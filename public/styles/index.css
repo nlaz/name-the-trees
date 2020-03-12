@@ -1,1 +1,5 @@
 /* Stylesheet to make it pretty 🌈 */
+
+input.search::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}

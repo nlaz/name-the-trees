@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Head from "next/head";
 
-const rootUrl = "http://niko.pizza"; // Replace with url
+const rootUrl = "http://localhost:3000"; // Replace with url
 
 const defaults = {
   company: "Name the Trees",
@@ -11,14 +11,6 @@ const defaults = {
 };
 
 class Meta extends Component {
-  componentDidMount() {
-    if (!window.GA_INITIALIZED) {
-      initGA();
-      window.GA_INITIALIZED = true;
-    }
-    logPageView();
-  }
-
   render() {
     let canonicalUrl = `${rootUrl}${this.props.path}`;
     let twitterImage = `${rootUrl}${this.props.twitterImage ||
@@ -46,7 +38,10 @@ class Meta extends Component {
         <meta name="twitter:title" content={this.props.title} />
         <meta name="twitter:description" content={this.props.description} />
         <meta name="twitter:image" content={twitterImage} />
-        <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css">
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/tachyons@4/css/tachyons.min.css"
+        />
         <link rel="stylesheet" href="/styles/index.css" />
       </Head>
     );
