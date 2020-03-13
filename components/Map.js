@@ -15,8 +15,8 @@ class Map extends Component {
   render() {
     return (
       <ReactMapGL
-        mapStyle="mapbox://styles/mapbox/streets-v11"
-        mapboxApiAccessToken="pk.eyJ1IjoibmVuZ21hbm4iLCJhIjoiY2s3bnd1MjFiMDFwaTNmcHBzMjVpeWozaSJ9.MFhAt_GAcAo7COLtd5Z-eA"
+        mapStyle="mapbox://styles/nlaz/cjq8ujep2dnem2rntfjo44tjy/draft"
+        mapboxApiAccessToken="pk.eyJ1IjoibmxheiIsImEiOiJjanE4dDY4Mm0wejIyM3hsMTFxMGluOWJoIn0.B2eAKqIcd9V9aQLDxSLCDg"
         onViewportChange={viewport => this.setState({ viewport })}
         {...this.state.viewport}
       />
